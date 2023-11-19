@@ -6,11 +6,15 @@ namespace lab9_multi_5C24B
 {
     public partial class App : Application
     {
+        public static float ScreenHeight { get; set; }
+
+        public static float ScreenWidth { get; set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

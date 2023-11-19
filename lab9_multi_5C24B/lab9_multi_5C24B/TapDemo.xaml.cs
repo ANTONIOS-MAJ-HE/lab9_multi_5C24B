@@ -13,7 +13,9 @@ namespace lab9_multi_5C24B
     public partial class TapDemo : ContentPage
     {
         int tapCount;
+
         readonly Label label;
+
         public TapDemo()
         {
             InitializeComponent();
